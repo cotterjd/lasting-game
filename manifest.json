@@ -1,0 +1,14 @@
+{
+  "name": "LastingGame",
+  "start_url": "",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#242424",
+  "theme_color": "#ffffff"
+}
