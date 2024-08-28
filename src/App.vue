@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import audioFile from './assets/ding-126626.mp3';
 
 export default {
   components: {},
@@ -19,6 +20,7 @@ export default {
     ],
     count: 0,
     time: 0,
+    audio: null,
   }),
   watch: {},
   methods: {
@@ -29,6 +31,7 @@ export default {
           this.countDown();
         }, 1000)
       } else {
+        this.audio.play();
         this.changeAction();
       }
     },
@@ -41,6 +44,7 @@ export default {
     }
   },
   mounted() {
+    this.audio = new Audio(audioFile);
     this.changeAction();
   },
 };
